@@ -1,0 +1,48 @@
+[user]
+    name = dot
+    email = shuhei.kondo@gmail.com
+[core]
+    excludesfile = ~/.gitignore
+    autocrlf = input
+    quotepath = false
+    precomposeunicode = true
+    editor = atom -w
+[color]
+    ui = auto
+[push]
+    default = upstream
+[rebase]
+    stat = true
+[pull]
+    rebase = true
+[merge]
+    ff = false
+[branch]
+    autosetuprebase = always
+[alias]
+    ci = commit
+    st = status --ignore-submodules=dirty
+    co = checkout
+    url = config --get remote.origin.url
+    pr = pull --rebase
+    l = log --stat --decorate
+    lp = log -p
+    ls = log --stat
+    lg= log --decorate --oneline --graph
+    wd= diff --word-diff
+
+    b = branch -v -v
+    bm = branch --merged
+    bnm = branch --no-merged
+
+    d = diff --patience
+    ds = diff --staged
+[credential]
+    helper = osxkeychain
+[pager]
+    log = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+    show = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+    diff = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+[url "git@github.com:"]
+    pushinsteadof = "https://github.com/"
+    pushinsteadof = "git://github.com/"

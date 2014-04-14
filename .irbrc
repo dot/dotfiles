@@ -1,0 +1,17 @@
+require 'irb/completion'
+require 'irb/ext/save-history'
+
+
+require 'what_methods' rescue nil
+begin
+  require 'wirb'
+  Wirb.start
+rescue LoadError => e
+  #p e.message
+end
+
+IRB.conf[:PROMPT_MODE] = :SIMPLE if IRB.conf[:PROMPT_MODE] == :DEFAULT
+IRB.conf[:USE_READLINE] = true
+IRB.conf[:AUTO_INDENT] = true
+IRB.conf[:SAVE_HISTORY] = 100000
+IRB.conf[:HISTORY_FILE] = File.expand_path('~/.irb_history')
