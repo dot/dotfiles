@@ -9,7 +9,7 @@ task default: :all
 task all: %w(system tools:all symlink)
 
 task :system do
-  system %Q{script/osx.sh}
+  system %Q{scripts/osx.sh}
 end
 
 task :symlink do
