@@ -14,11 +14,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.finder QLEnableTextSelection -bool yes
 # タスク切り替え時にQuickLookを非表示にする
 defaults write com.apple.finder QLHidePanelOnDeactivate -bool true
-killall Finder
 
 # Dockが隠れるときの遅延を無くす
 defaults write com.apple.Dock autohide-delay -float 0 &&
-killall Dock
 
 # TISwitcherを無効化する
 sudo defaults write /System/Library/LaunchAgents/com.apple.tiswitcher Disabled -bool yes
@@ -36,6 +34,21 @@ defaults write com.apple.helpviewer DevMode -bool true
 
 # 再開しないようにする
 defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
+
+# 保存場所のデフォルトをiCloudでなくす
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+# Expand print panel by default
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+
+# restart
+killall Finder
+killall Dock
 
 # xcode client tools
 xcode-select --install
