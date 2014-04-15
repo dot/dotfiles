@@ -1,84 +1,68 @@
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+bindkey -e
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="ys-dot"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line to disable colors in ls.
-DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to disable command auto-correction.
-# DISABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(atom brew brew-cask bundler gem git git-remote-branch\
-heroku mosh osx rails rake-fast tmux vagrant)
-
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-#export PATH=$HOME/bin:/usr/local/bin:$PATH
-# export MANPATH="/usr/local/man:$MANPATH"
 path=( ~/bin \
     $HOME/.rbenv/bin \
     /usr/local/bin /usr/local/sbin \
     /bin /sbin /usr/bin /usr/sbin \
 )
+fpath=(~/.functions ${fpath})
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+# oh-my-zsh
+source ~/.zshrc.ohmy
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+### history
+setopt extended_history
+setopt hist_expand
+setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+setopt hist_reduce_blanks
+setopt hist_no_store
+setopt hist_ignore_space
+setopt share_history
+setopt inc_append_history
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+### completion
+autoload -Uz compinit; compinit -u
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+setopt auto_list
+setopt auto_menu
+setopt list_packed
+setopt list_types
+setopt print_eight_bit
+setopt complete_in_word
+setopt mark_dirs
+setopt auto_param_slash
+setopt auto_param_keys
+setopt magic_equal_subst
 
+setopt numeric_glob_sort
+setopt glob_complete
+setopt glob_dots
+
+_cache_hosts=(`perl -ne  'if (/^([a-zA-Z0-9.-]+)/) { print "$1\n";}' ~/.ssh/known_hosts`)
+
+### other
+setopt no_beep
+setopt brace_ccl
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt interactive_comments
+
+# bindkey
+bindkey '^P' history-beginning-search-backward
+bindkey '^N' history-beginning-search-forward
+bindkey '^X^F' forward-word
+bindkey '^X^B' backward-word
+bindkey '^R' history-incremental-pattern-search-backward
+bindkey '^S' history-incremental-pattern-search-forward
+
+autoload smart-insert-last-word
+zle -N insert-last-word smart-insert-last-word
+zstyle :insert-last-word match \
+  '*([^[:space:]][[:alpha:]/\\]|[[:alpha:]/\\][^[:space:]])*'
+bindkey '^]' insert-last-word
+
+## alias
 source ~/.aliases
 
 # init rbenv
