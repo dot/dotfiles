@@ -34,5 +34,8 @@ chflags nohidden ~/Library
 # ヘルプウィンドウを背面にできるようにする
 defaults write com.apple.helpviewer DevMode -bool true
 
+# 再開しないようにする
+defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
+
 # xcode client tools
 xcode-select --install
