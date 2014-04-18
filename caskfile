@@ -24,5 +24,7 @@ cask install teleport --force
 cask install haroopad --force
 cask install cyberduck --force
 cask install startninja --force
+cask install sequel-pro --force
+cask install pg-commander --force
 
-cask alfred link
+#cask alfred link
