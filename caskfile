@@ -26,5 +26,9 @@ cask install cyberduck --force
 cask install startninja --force
 cask install sequel-pro --force
 cask install pg-commander --force
+cask install sitesucker --force
+cask install mysqlworkbench --force
+cask install imageoptim —force
+cask install colors —force
 
 #cask alfred link
