@@ -38,12 +38,14 @@ install mongodb
 install node
 install phantomjs
 install postgresql
-#install mysql
+install mysql
 install qt
 install redis
 install sqlite
 install vim
 install emacs --cocoa --japanese --srgb
+
+install dnsmasq
 
 install rbenv
 install rbenv-default-gems
