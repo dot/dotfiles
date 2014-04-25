@@ -16,7 +16,6 @@ install tree
 install reattach-to-user-namespace
 install wget
 install curl
-install curl-ca-bundle
 install xz
 install z
 install zsh

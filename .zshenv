@@ -18,6 +18,3 @@ export LC_ALL='ja_JP.UTF-8'
 #export LC_CTYPE='C'
 
 REPORTTIME=3
-
-# add cert file see. brew info curl-ca-cert for rubygems
-export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
