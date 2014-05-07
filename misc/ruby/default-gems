@@ -2,3 +2,6 @@ bundler
 pry
 what_methods
 wirb
+hirb
+hirb-unicode
+awesome_print
