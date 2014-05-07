@@ -32,7 +32,7 @@ task :symlink do
 end
 
 namespace :tools do
-#  task all: %w(oh_my_zsh homebrew ruby)
+  task all: %w(oh_my_zsh homebrew ruby)
   task :oh_my_zsh do
     unless File.exist?(File.join(ENV['HOME'], ".oh-my-zsh"))
       puts "installing oh-my-zsh"
