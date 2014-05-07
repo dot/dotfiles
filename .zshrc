@@ -73,3 +73,6 @@ fi
 
 # init z
 . `brew --prefix`/etc/profile.d/z.sh
+
+# direnv
+eval "$(direnv hook $0)"

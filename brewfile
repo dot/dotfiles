@@ -24,6 +24,7 @@ install renameutils
 install rlwrap
 install mobile-shell
 install jq
+install direnv
 
 install openssl
 install readline
