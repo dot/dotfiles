@@ -1,3 +1,7 @@
+tap caskroom/fonts
+#fonts
+cask install font-source-code-pro
+
 cask install alfred --force
 cask install dropbox --force
 cask install vagrant --force
@@ -19,7 +23,7 @@ cask install flash --force
 cask install silverlight --force
 cask install mou --force
 cask install opera --force
-cask install simple-comic --force
+#cask install simple-comic --force
 cask install teleport --force
 cask install haroopad --force
 cask install cyberduck --force
@@ -28,7 +32,9 @@ cask install sequel-pro --force
 cask install pg-commander --force
 cask install sitesucker --force
 cask install mysqlworkbench --force
-cask install imageoptim —force
-cask install colors —force
+cask install imageoptim --force
+cask install colors --force
+cask install p4merge --force
+cask install cakebrew --force
 
-#cask alfred link
+cask alfred link
