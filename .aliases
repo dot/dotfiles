@@ -4,6 +4,7 @@ alias la='ls -a'
 alias ll='ls -al'
 alias tm=tmux
 alias j=z
+alias mm='bundle exec middleman'
 
 # for ruby
 alias be='bundle exec'
