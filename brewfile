@@ -1,7 +1,11 @@
 tap phinze/homebrew-cask
+tap lestrrat/peco
+tap homebrew/dupes
 update
 
+install unzip
 install brew-cask
+install peco
 
 install ag
 install lv
@@ -24,6 +28,7 @@ install renameutils
 install rlwrap
 install mobile-shell
 install jq
+install jsonpp
 install direnv
 
 install openssl
@@ -52,3 +57,7 @@ install rbenv-default-gems
 install rbenv-gem-rehash
 install rbenv-gemset
 install ruby-build
+
+install docker
+install boot2docker
+install ansible

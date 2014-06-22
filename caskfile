@@ -1,7 +1,8 @@
 tap caskroom/fonts
 #fonts
-cask install font-source-code-pro
+cask install font-source-code-pro --force
 
+cask install keyremap4macbook --force
 cask install alfred --force
 cask install dropbox --force
 cask install vagrant --force
@@ -36,5 +37,10 @@ cask install imageoptim --force
 cask install colors --force
 cask install p4merge --force
 cask install cakebrew --force
+cask install trailer --force
+#cask install sitesucker --force
+#cask install notational-velocity --force
+cask install nvalt --force
+cask install bartender --force
 
 cask alfred link
