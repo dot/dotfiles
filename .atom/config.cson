@@ -1,27 +1,22 @@
+'recent-files':
+  'updated': false
+'remember-window':
+  'y': 302
+  'width': 1440
+  'height': 1414
+  'treeWidth': 200
 'exception-reporting':
-  'userId': 'a540bb34-e517-5b88-42b7-f3b6b980ecdc'
-'release-notes':
-  'viewedVersion': '0.85.0'
+  'userId': '65c47b2a-3f23-588c-4aad-7ea6be35eb7b'
 'welcome':
   'showOnStartup': false
 'metrics':
-  'userId': 'b3a0e44ffb8b0d075bb0a2c1598a0e95c8dcc27d'
-'editor':
-  'fontSize': 16
-  'showIndentGuide': true
-  'showInvisibles': true
-  'softWrap': true
-  'softWrapAtPreferredLineLength': true
-  'preferredLineLength': 100
-  'lineHeight': 1.2
-  'fontFamily': 'Source Code Pro'
+  'userId': 'b9e0e1d1ac5cfeb8a020dbc567cf512eaf7c9950'
 'core':
   'themes': [
     'spacegray-eighties-ui'
     'spacegray-dark-syntax'
   ]
-  'ignoredNames': [
-    '.git'
-    '.svn'
-    '.DS_Store'
-  ]
+'editor':
+  'showIndentGuide': true
+  'showInvisibles': true
+  'softWrap': true
