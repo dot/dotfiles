@@ -46,6 +46,9 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
+# App Nap を停止する
+#defaults write NSGlobalDomain NSAppSleepDisabled -bool YES
+
 # restart
 killall Finder
 killall Dock
