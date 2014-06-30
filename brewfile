@@ -1,5 +1,5 @@
 tap phinze/homebrew-cask
-tap lestrrat/peco
+tap peco/peco
 tap homebrew/dupes
 update
 

@@ -42,5 +42,6 @@ cask install trailer --force
 #cask install notational-velocity --force
 cask install nvalt --force
 cask install bartender --force
+cask install knock --force
 
 cask alfred link
