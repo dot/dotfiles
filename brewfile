@@ -35,6 +35,7 @@ install openssl
 install readline
 
 install git
+install mercurial
 install tig
 install hub
 install heroku-toolbelt

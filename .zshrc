@@ -7,6 +7,11 @@ path=( ~/bin \
 )
 fpath=(~/.functions ${fpath})
 
+# for go lang
+if [ -x "`which go`" ]; then
+  export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+fi
+
 # oh-my-zsh
 source ~/.zshrc.ohmy
 
@@ -53,8 +58,23 @@ bindkey '^P' history-beginning-search-backward
 bindkey '^N' history-beginning-search-forward
 bindkey '^X^F' forward-word
 bindkey '^X^B' backward-word
-bindkey '^R' history-incremental-pattern-search-backward
-bindkey '^S' history-incremental-pattern-search-forward
+#bindkey '^R' history-incremental-pattern-search-backward
+#bindkey '^S' history-incremental-pattern-search-forward
+
+#######################################
+# peco hitory
+#######################################
+function peco-select-history() {
+    local tac
+    tac="tail -r";
+    BUFFER=$(fc -l -n 1 | \
+        eval $tac | \
+        /usr/local/bin/peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^R' peco-select-history
 
 autoload smart-insert-last-word
 zle -N insert-last-word smart-insert-last-word
@@ -75,4 +95,4 @@ fi
 . `brew --prefix`/etc/profile.d/z.sh
 
 # direnv
-eval "$(direnv hook $0)"
+eval "$(direnv hook zsh)"

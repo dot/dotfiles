@@ -17,4 +17,11 @@ export LANG='ja_JP.UTF-8'
 export LC_ALL='ja_JP.UTF-8'
 #export LC_CTYPE='C'
 
+# GO / GHQ settings
+# for go lang
+if [ -x "`which go`" ]; then
+  export GOROOT=`go env GOROOT`
+  export GOPATH=$HOME/projects/.go
+fi
+
 REPORTTIME=3

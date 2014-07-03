@@ -4,7 +4,6 @@ alias la='ls -a'
 alias ll='ls -al'
 alias tm=tmux
 alias j=z
-alias mm='bundle exec middleman'
 
 # for ruby
 alias be='bundle exec'
@@ -27,3 +26,8 @@ function psg() {
 function cdb() {
   cd `ruby -e "require 'rubygems';gem 'bundler';require 'bundler';Bundler.load.specs.each{|s| puts s.full_gem_path if s.name == '${1}'}"`
 }
+
+
+### peco
+alias o='git ls-files | peco | xargs open -a Atom'
+alias e='cd $(ghq list -p | peco)'
