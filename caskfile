@@ -1,8 +1,9 @@
 tap caskroom/fonts
 #fonts
 cask install font-source-code-pro --force
+cask install font-m-plus --force
 
-cask install keyremap4macbook --force
+cask install karabiner --force
 cask install alfred --force
 cask install dropbox --force
 cask install vagrant --force
