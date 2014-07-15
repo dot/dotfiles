@@ -5,7 +5,7 @@ path=( ~/bin \
     /usr/local/bin /usr/local/sbin \
     /bin /sbin /usr/bin /usr/sbin \
 )
-fpath=(~/.functions ${fpath})
+fpath=(~/.functions ${fpath} ${^${(s/:/)GOPATH}}/src/*/*/ghq/zsh(N))
 
 # for go lang
 if [ -x "`which go`" ]; then
