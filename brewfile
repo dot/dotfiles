@@ -1,11 +1,13 @@
-tap phinze/homebrew-cask
+tap caskroom/cask
 tap peco/peco
 tap homebrew/dupes
+tap motemen/ghq
 update
 
 install unzip
 install brew-cask
 install peco
+install ghq
 
 install ag
 install lv
