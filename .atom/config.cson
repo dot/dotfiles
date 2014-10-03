@@ -1,22 +1,32 @@
-'recent-files':
-  'updated': false
-'remember-window':
-  'y': 302
-  'width': 1440
-  'height': 1414
-  'treeWidth': 200
 'exception-reporting':
   'userId': '65c47b2a-3f23-588c-4aad-7ea6be35eb7b'
+'release-notes':
+  'viewedVersion': '0.95.0'
 'welcome':
   'showOnStartup': false
 'metrics':
   'userId': 'b9e0e1d1ac5cfeb8a020dbc567cf512eaf7c9950'
+'editor':
+  'showIndentGuide': true
+  'showInvisibles': true
+  'softWrap': true
+  'lineHeight': 1.2
+  'preferredLineLength': 100
+  'fontSize': 15
 'core':
   'themes': [
     'spacegray-eighties-ui'
     'spacegray-dark-syntax'
   ]
-'editor':
-  'showIndentGuide': true
-  'showInvisibles': true
-  'softWrap': true
+  'disabledPackages': [
+    'rails-transporter'
+    'emmet'
+  ]
+'remember-window':
+  'x': 0
+  'y': 22
+  'width': 2560
+  'height': 1414
+  'treeWidth': 299
+'recent-files':
+  'updated': false
