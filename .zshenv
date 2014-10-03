@@ -12,6 +12,8 @@ export LESS='--tabs=4 --no-init --LONG-PROMPT --ignore-case'
 export GREP_OPTIONS='--color=auto'
 export EDITOR='vim'
 
+export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.7.0"
+
 # locale
 export LANG='ja_JP.UTF-8'
 export LC_ALL='ja_JP.UTF-8'
@@ -25,3 +27,5 @@ if [ -x "`which go`" ]; then
 fi
 
 REPORTTIME=3
+
+typeset -U path cdpath fpath manpath
