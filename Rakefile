@@ -45,7 +45,7 @@ namespace :tools do
   task :homebrew do
     unless system %Q{which brew}
       puts "installing homebrew"
-      system %Q{ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"}
+      system %Q{ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"}
       system %Q{brew bundle brewfile}
     else
       # system %Q{brew update && brew upgrade}
