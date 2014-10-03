@@ -49,6 +49,10 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 # App Nap を停止する
 #defaults write NSGlobalDomain NSAppSleepDisabled -bool YES
 
+# ファンクションキーの設定
+# see http://r7kamura.github.io/2014/08/03/as-standard-function-keys.html
+defaults write -g com.apple.keyboard.fnState -bool true
+
 # restart
 killall Finder
 killall Dock
