@@ -1,5 +1,5 @@
 #!/bin/sh
-
+brew cask update
 # versioned
 ## fonts
 brew cask install font-source-code-pro
@@ -32,6 +32,7 @@ brew cask install macdown
 brew cask install hosts
 
 # unversioned
+brew cask install appzapper --force
 brew cask install dropbox --force
 brew cask install skype --force
 brew cask install github --force
@@ -52,3 +53,7 @@ brew cask install bartender --force
 brew cask install knock --force
 brew cask install google-japanese-ime --force
 brew cask install utorrent
+brew cask install flux --force
+
+#cleanup
+brew cask cleanup

@@ -15,6 +15,7 @@ brew install peco
 brew install ghq
 
 brew install ag
+brew install pt
 brew install lv
 brew install colordiff
 brew install coreutils
@@ -37,6 +38,7 @@ brew install mobile-shell
 brew install jq
 brew install jsonpp
 brew install direnv
+brew install highlight
 
 brew install openssl
 brew install readline
