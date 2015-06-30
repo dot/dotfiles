@@ -4,6 +4,8 @@ brew cask update
 ## fonts
 brew cask install font-source-code-pro
 brew cask install font-m-plus
+brew cask install font-ricty-diminished
+brew cask install font-source-han-code-jp
 
 brew cask install karabiner
 brew cask install alfred
@@ -30,6 +32,14 @@ brew cask install trailer
 brew cask install nvalt
 brew cask install macdown
 brew cask install hosts
+brew cask install handbrake
+brew cask install skim
+brew cask install choosy
+brew cask install duet
+brew cask install bartender
+brew cask install firefox
+brew cask install xquartz
+brew cask install cloudytabs
 
 # unversioned
 brew cask install appzapper --force
@@ -39,8 +49,7 @@ brew cask install github --force
 brew cask install delibar --force
 brew cask install onyx --force
 brew cask install path-finder --force
-brew cask install firefox --force
-#brew cask install hyperswitch --force
+brew cask install hyperswitch --force
 brew cask install ibettercharge --force
 brew cask install mou --force
 brew cask install teleport --force
@@ -49,11 +58,13 @@ brew cask install sitesucker --force
 brew cask install imageoptim --force
 brew cask install sitesucker --force
 brew cask install notational-velocity --force
-brew cask install bartender --force
 brew cask install knock --force
 brew cask install google-japanese-ime --force
 brew cask install utorrent
 brew cask install flux --force
-
+brew cask install goofy --force
+brew cask install hotswitch --force
+brew cask install flashlight --force
+brew cask install macs-fan-control --force
 #cleanup
 brew cask cleanup

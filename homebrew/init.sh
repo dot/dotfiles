@@ -3,16 +3,18 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 hash -r
 
-brew tap peco/peco
 brew tap homebrew/dupes
 brew tap motemen/ghq
 brew tap caskroom/fonts
+brew tap homebrew/binary
+brew tap homebrew/science
 brew update
 
 brew install unzip
 brew install caskroom/cask/brew-cask
 brew install peco
 brew install ghq
+brew install packer
 
 brew install ag
 brew install pt
@@ -31,6 +33,7 @@ brew install curl
 brew install xz
 brew install z
 brew install zsh
+brew install fish
 brew install zsh-completions
 brew install renameutils
 brew install rlwrap
@@ -71,3 +74,5 @@ brew install ruby-build
 brew install docker
 brew install boot2docker
 brew install ansible
+
+brew install R
