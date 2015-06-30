@@ -1,6 +1,7 @@
 bindkey -e
 
 path=( ~/bin \
+    $HOME/google-cloud-sdk/bin \
     $HOME/.rbenv/bin \
     /usr/local/bin /usr/local/sbin \
     /bin /sbin /usr/bin /usr/sbin \
