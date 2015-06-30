@@ -42,6 +42,16 @@ namespace :tools do
     end
   end
 
+  task :oh_my_fish do
+    unless File.exist?(File.join(ENV['HOME'], ".oh-my-fish"))
+      puts "installing oh-my-fish"
+      system %Q{curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/tools/install.fish | fish}
+    else
+      # git pull
+    end
+    system %Q{fish -c "omf install"}
+  end
+
   task :homebrew do
     unless system %Q{which brew}
       puts "installing homebrew"
