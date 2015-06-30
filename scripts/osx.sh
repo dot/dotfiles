@@ -20,7 +20,7 @@ defaults write com.apple.Dock autohide-delay -float 0 &&
 
 # TISwitcherを無効化する
 sudo defaults write /System/Library/LaunchAgents/com.apple.tiswitcher Disabled -bool yes
-chmod 644 /System/Library/LaunchAgents/com.apple.tiswitcher.plist
+#chmod 644 /System/Library/LaunchAgents/com.apple.tiswitcher.plist
 killall TISwitcher
 
 # 起動音を消す
@@ -28,6 +28,7 @@ sudo nvram SystemAudioVolume=%80﻿
 
 # ライブラリフォルダを表示
 chflags nohidden ~/Library
+sudo chflags nohidden /opt
 
 # ヘルプウィンドウを背面にできるようにする
 defaults write com.apple.helpviewer DevMode -bool true
@@ -53,9 +54,11 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 # see http://r7kamura.github.io/2014/08/03/as-standard-function-keys.html
 defaults write -g com.apple.keyboard.fnState -bool true
 
+# TODO: safari のURLをフルにする設定...
+
 # restart
 killall Finder
 killall Dock
 
 # xcode client tools
-xcode-select --install
+#xcode-select --install

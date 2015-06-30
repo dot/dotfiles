@@ -19,11 +19,6 @@
     "ArrowRight": "peco.SelectNextPage",
     "C-v":        "peco.SelectNextPage",
 
-    "ArrowUp": "peco.SelectNext",
-    "C-p":     "peco.SelectNext",
-    "ArrowDown": "peco.SelectPrevious",
-    "C-n":       "peco.SelectPrevious",
-
     "C-t": "peco.ToggleSelection",
     "C-s": "peco.ToggleSelectionAndSelectNext",
 
