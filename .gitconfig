@@ -2,7 +2,7 @@
     name = dot
     email = shuhei.kondo@gmail.com
 [core]
-	excludesfile = /Users/kondo/.gitignore_global
+    excludesfile = ~/.gitignore
     autocrlf = input
     quotepath = false
     precomposeunicode = true
@@ -38,7 +38,7 @@
     d = diff --patience
     ds = diff --staged
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
 [pager]
     log = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
     show = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
@@ -46,8 +46,5 @@
 [url "git@github.com:"]
     pushinsteadof = "https://github.com/"
     insteadOf = "https://github.com/"
-[filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
 [ghq]
-  root = ~/projects
+    root = ~/projects
