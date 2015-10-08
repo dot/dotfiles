@@ -4,6 +4,7 @@ alias la='ls -a'
 alias ll='ls -al'
 alias tm=tmux
 alias j=z
+alias jq='jq -C'
 
 # for ruby
 alias be='bundle exec'
@@ -31,3 +32,6 @@ function cdb() {
 ### peco
 alias o='git ls-files | peco | xargs open -a Atom'
 alias e='cd $(ghq list -p | peco)'
+
+# misc
+alias bindings='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -dump | egrep "bindings.+:" | sort'
