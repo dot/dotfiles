@@ -15,8 +15,9 @@ defaults write com.apple.finder QLEnableTextSelection -bool yes
 # タスク切り替え時にQuickLookを非表示にする
 defaults write com.apple.finder QLHidePanelOnDeactivate -bool true
 
-# Dockが隠れるときの遅延を無くす
-defaults write com.apple.Dock autohide-delay -float 0 &&
+# hide dock
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide-delay -float 0
 
 # TISwitcherを無効化する
 sudo defaults write /System/Library/LaunchAgents/com.apple.tiswitcher Disabled -bool yes
@@ -54,7 +55,28 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 # see http://r7kamura.github.io/2014/08/03/as-standard-function-keys.html
 defaults write -g com.apple.keyboard.fnState -bool true
 
-# TODO: safari のURLをフルにする設定...
+# Enable the `Develop` menu and the `Web Inspector` （開発メニューを表示）
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+# Enable `Debug` menu （メニュー → デバッグを表示）
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+# アドレスバーに完全なURLを表示
+defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
+# コンテキストメニューにWebインスペクタを追加
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+# Show Safari's Status Bar （ステータスバーを表示）
+defaults write com.apple.Safari ShowStatusBar -bool true
+
+# scrolling
+defaults write -g NSScrollAnimationEnabled -bool NO
+
+# touch pad behaviour
+defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -int 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -int 1
+
 
 # restart
 killall Finder
