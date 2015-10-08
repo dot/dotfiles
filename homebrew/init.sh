@@ -45,6 +45,7 @@ brew install highlight
 
 brew install openssl
 brew install readline
+brew install libxml2
 
 brew install git
 brew install mercurial
@@ -57,7 +58,6 @@ brew install node
 brew install phantomjs
 brew install postgresql
 brew install mysql
-brew install qt
 brew install redis
 brew install sqlite
 brew install vim
@@ -73,6 +73,8 @@ brew install ruby-build
 
 brew install docker
 brew install boot2docker
+brew install docker-machine
 brew install ansible
 
-brew install R
+brew install fzf
+#brew install R

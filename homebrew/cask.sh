@@ -6,20 +6,22 @@ brew cask install font-source-code-pro
 brew cask install font-m-plus
 brew cask install font-ricty-diminished
 brew cask install font-source-han-code-jp
+brew cask install font-roboto
+brew cask install font-noto-sans-japanese
 
 brew cask install karabiner
 brew cask install alfred
+brew cask install appzapper
 brew cask install iterm2
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
 brew cask install libreoffice
-brew cask install coteditor
 brew cask install brackets
 brew cask install flash
 brew cask install silverlight
 brew cask install opera
-brew cask install simple-comic
+brew cask install techstoreclub-simple-comic
 brew cask install haroopad
 brew cask install cyberduck
 brew cask install sequel-pro
@@ -40,29 +42,30 @@ brew cask install bartender
 brew cask install firefox
 brew cask install xquartz
 brew cask install cloudytabs
+brew cask install kitematic
+brew cask install github-desktop
+brew cask install flux
+brew cask install delibar
+brew cask install goofy
+brew cask install hyperswitch
+brew cask install ibettercharge
+brew cask install imageoptim
+brew cask install coconutbattery
 
 # unversioned
-brew cask install appzapper --force
 brew cask install dropbox --force
 brew cask install skype --force
-brew cask install github --force
-brew cask install delibar --force
 brew cask install onyx --force
 brew cask install path-finder --force
-brew cask install hyperswitch --force
-brew cask install ibettercharge --force
 brew cask install mou --force
 brew cask install teleport --force
 brew cask install startninja --force
 brew cask install sitesucker --force
-brew cask install imageoptim --force
 brew cask install sitesucker --force
 brew cask install notational-velocity --force
 brew cask install knock --force
 brew cask install google-japanese-ime --force
 brew cask install utorrent
-brew cask install flux --force
-brew cask install goofy --force
 brew cask install hotswitch --force
 brew cask install flashlight --force
 brew cask install macs-fan-control --force
