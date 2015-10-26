@@ -1,32 +1,20 @@
-'exception-reporting':
-  'userId': '65c47b2a-3f23-588c-4aad-7ea6be35eb7b'
-'release-notes':
-  'viewedVersion': '0.95.0'
-'welcome':
-  'showOnStartup': false
-'metrics':
-  'userId': 'b9e0e1d1ac5cfeb8a020dbc567cf512eaf7c9950'
-'editor':
-  'showIndentGuide': true
-  'showInvisibles': true
-  'softWrap': true
-  'lineHeight': 1.2
-  'preferredLineLength': 100
-  'fontSize': 15
-'core':
-  'themes': [
-    'spacegray-eighties-ui'
-    'spacegray-dark-syntax'
-  ]
-  'disabledPackages': [
-    'rails-transporter'
-    'emmet'
-  ]
-'remember-window':
-  'x': 0
-  'y': 22
-  'width': 2560
-  'height': 1414
-  'treeWidth': 299
-'recent-files':
-  'updated': false
+"*":
+  "exception-reporting":
+    userId: "ea5d42c8-a26a-d7eb-35a8-399717a556be"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+  editor:
+    invisibles: {}
+    fontFamily: "Source Han Code JP"
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+  minimap:
+    plugins:
+      "find-and-replace": true
+      "git-diff": true
