@@ -20,9 +20,10 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 0
 
 # TISwitcherを無効化する
-sudo defaults write /System/Library/LaunchAgents/com.apple.tiswitcher Disabled -bool yes
+# use safe mode and csrutil disable
+#sudo defaults write /System/Library/LaunchAgents/com.apple.tiswitcher Disabled -bool yes
 #chmod 644 /System/Library/LaunchAgents/com.apple.tiswitcher.plist
-killall TISwitcher
+#killall TISwitcher
 
 # 起動音を消す
 sudo nvram SystemAudioVolume=%80﻿
