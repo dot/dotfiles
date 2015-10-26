@@ -26,11 +26,14 @@ defaults write com.apple.dock autohide-delay -float 0
 #killall TISwitcher
 
 # 起動音を消す
-sudo nvram SystemAudioVolume=%80﻿
+sudo nvram SystemAudioVolume=" "
 
 # ライブラリフォルダを表示
 chflags nohidden ~/Library
 sudo chflags nohidden /opt
+
+# Guest Login を不可に
+sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool NO
 
 # ヘルプウィンドウを背面にできるようにする
 defaults write com.apple.helpviewer DevMode -bool true
@@ -55,6 +58,16 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 # ファンクションキーの設定
 # see http://r7kamura.github.io/2014/08/03/as-standard-function-keys.html
 defaults write -g com.apple.keyboard.fnState -bool true
+
+# modifier keyの設定
+# caps to ctrl
+keybdid=$(ioreg -n IOHIDKeyboard -r | grep -E 'VendorID"|ProductID' | awk '{ print $4 }' | paste -s -d'-\n' -)'-0'
+defaults -currentHost write -g com.apple.keyboard.modifiermapping.${keyboardid} -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>2</integer><key>HIDKeyboardModifierMappingSrc</key><integer>0</integer></dict>'
+
+# shortcutkeys
+# IME切り替えを Ctrl+o に
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 60 "<dict><key>enabled</key><true/><key>value</key><dict><key>parameters</key><array><integer>111</integer><integer>31</integer><integer>262144</integer></array><key>type</key><string>standard</string></dict></dict>"
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 61 "<dict><key>enabled</key><true/><key>value</key><dict><key>parameters</key><array><integer>111</integer><integer>31</integer><integer>393216</integer></array><key>type</key><string>standard</string></dict></dict>"
 
 # Enable the `Develop` menu and the `Web Inspector` （開発メニューを表示）
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
