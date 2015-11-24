@@ -18,3 +18,6 @@
     plugins:
       "find-and-replace": true
       "git-diff": true
+  "autocomplete-elixir":
+    elixirPath: "/usr/local/bin/elixir"
+    erlangHome: "/usr/local/bin"
