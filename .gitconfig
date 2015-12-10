@@ -2,7 +2,7 @@
     name = dot
     email = shuhei.kondo@gmail.com
 [core]
-    excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore_global
     autocrlf = input
     quotepath = false
     precomposeunicode = true

@@ -1,0 +1,13 @@
+"*":
+  "exception-reporting":
+    userId: "d1c0d445-4d5a-1312-3304-08f7722bd2f1"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+  editor:
+    invisibles: {}
+    fontFamily: "Source Han Code Jp"
