@@ -1,5 +1,4 @@
-
-# Created by https://www.gitignore.io/api/osx,ruby
+# Created by https://www.gitignore.io/api/osx,vim
 
 ### OSX ###
 .DS_Store
@@ -27,3 +26,12 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+
+### Vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~

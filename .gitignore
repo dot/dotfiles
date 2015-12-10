@@ -1,1 +1,9 @@
-.atom/.apm/.atom/.node-gyp/.atom/packages/.atom/compile-cache/.atom/storage/.atom/projects.cson.atom/blob-store/.rake_taskshogehoge
+.rake_tasks
+
+.atom/.apm/
+.atom/.node-gyp/
+.atom/packages/
+.atom/compile-cache/
+.atom/storage/
+.atom/projects.cson
+.atom/blob-store/
