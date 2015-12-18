@@ -74,7 +74,9 @@ brew install ruby-build
 brew install docker
 brew install boot2docker
 brew install docker-machine
+brew install docker-compose
 brew install ansible
 
 brew install fzf
+brew install neovim/neovim/neovim
 #brew install R

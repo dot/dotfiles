@@ -51,6 +51,7 @@ brew cask install hyperswitch
 brew cask install ibettercharge
 brew cask install imageoptim
 brew cask install coconutbattery
+brew cask install glimmerblocker
 
 # unversioned
 brew cask install dropbox --force
