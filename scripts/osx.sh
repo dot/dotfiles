@@ -10,8 +10,6 @@ defaults write -g KeyRepeat -int 0
 # ネットワークボリュームに DS_Storeを作らない
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-# QuickLookで閲覧中ファイルの文字列を選択コピー可能にする
-defaults write com.apple.finder QLEnableTextSelection -bool yes
 # タスク切り替え時にQuickLookを非表示にする
 defaults write com.apple.finder QLHidePanelOnDeactivate -bool true
 
