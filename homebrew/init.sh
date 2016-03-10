@@ -62,6 +62,7 @@ brew install redis
 brew install sqlite
 brew install vim
 brew install emacs --cocoa --japanese --srgb
+brew install assh
 
 brew install dnsmasq
 
@@ -76,6 +77,7 @@ brew install boot2docker
 brew install docker-machine
 brew install docker-compose
 brew install ansible
+brew install terraform
 
 brew install fzf
 brew install neovim/neovim/neovim

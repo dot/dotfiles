@@ -12,6 +12,10 @@ brew cask install font-noto-sans-japanese
 brew cask install karabiner
 brew cask install alfred
 brew cask install appzapper
+brew cask install aseprite
+brew cask install bathyscaphe
+brew cask install caffeine
+brew cask install expandrive
 brew cask install iterm2
 brew cask install vagrant
 brew cask install virtualbox
@@ -52,23 +56,32 @@ brew cask install ibettercharge
 brew cask install imageoptim
 brew cask install coconutbattery
 brew cask install glimmerblocker
+brew cask install psequel
+brew cask install sourcetree
+brew cask install wireshark
+brew cask install nylas-n1
+brew cask install qlstephen
+brew cask install quicklook-csv
 
 # unversioned
 brew cask install dropbox --force
 brew cask install skype --force
 brew cask install onyx --force
 brew cask install path-finder --force
-brew cask install mou --force
-brew cask install teleport --force
-brew cask install startninja --force
+brew cask install mou
+brew cask install teleport
 brew cask install sitesucker --force
-brew cask install sitesucker --force
-brew cask install notational-velocity --force
-brew cask install knock --force
+brew cask install notational-velocity
 brew cask install google-japanese-ime --force
-brew cask install utorrent
-brew cask install hotswitch --force
-brew cask install flashlight --force
+brew cask install utorrent --force
+brew cask install hotswitch
+brew cask install flashlight
 brew cask install macs-fan-control --force
+brew cask install pingendo --force
+brew cask install qlmarkdown --force
+brew cask install quicklook-json --force
+brew cask install betterzipql --force
+brew cask install suspicious-package --force
+
 #cleanup
 brew cask cleanup
