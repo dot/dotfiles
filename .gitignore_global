@@ -35,3 +35,7 @@ Temporary Items
 Session.vim
 .netrwhist
 *~
+
+.envrc
+.rake_tasks
+*.retry
