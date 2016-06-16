@@ -7,7 +7,7 @@ brew cask install font-m-plus
 brew cask install font-ricty-diminished
 brew cask install font-source-han-code-jp
 brew cask install font-roboto
-brew cask install font-noto-sans-japanese
+brew cask install font-noto-sans-cjk-jp
 
 brew cask install karabiner
 brew cask install alfred
@@ -24,14 +24,13 @@ brew cask install libreoffice
 brew cask install brackets
 brew cask install flash
 brew cask install silverlight
-brew cask install opera
 brew cask install techstoreclub-simple-comic
 brew cask install haroopad
 brew cask install cyberduck
 brew cask install sequel-pro
 brew cask install pg-commander
 brew cask install mysqlworkbench
-brew cask install colors
+brew cask install couleurs
 brew cask install p4merge
 brew cask install cakebrew
 brew cask install trailer
@@ -62,6 +61,10 @@ brew cask install wireshark
 brew cask install nylas-n1
 brew cask install qlstephen
 brew cask install quicklook-csv
+brew cask install bitbar
+brew cask install near-lock
+brew cask install vivaldi
+brew cask install rstudio
 
 # unversioned
 brew cask install dropbox --force

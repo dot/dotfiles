@@ -6,15 +6,18 @@ hash -r
 brew tap homebrew/dupes
 brew tap motemen/ghq
 brew tap caskroom/fonts
+brew tap caskroom/cask
 brew tap homebrew/binary
 brew tap homebrew/science
+brew tap tkengo/highway
+
 brew update
 
 brew install unzip
 brew install caskroom/cask/brew-cask
 brew install peco
 brew install ghq
-brew install packer
+brew install highway
 
 brew install ag
 brew install pt
@@ -39,9 +42,12 @@ brew install renameutils
 brew install rlwrap
 brew install mobile-shell
 brew install jq
+brew install jo
 brew install jsonpp
 brew install direnv
 brew install highlight
+brew install gibo
+brew install awscli
 
 brew install openssl
 brew install readline
@@ -77,8 +83,10 @@ brew install boot2docker
 brew install docker-machine
 brew install docker-compose
 brew install ansible
+brew install packer
 brew install terraform
+brew install otto
 
 brew install fzf
 brew install neovim/neovim/neovim
-#brew install R
+brew install R
