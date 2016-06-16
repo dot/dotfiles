@@ -5,6 +5,9 @@ alias ll='ls -al'
 alias tm=tmux
 alias j=z
 alias jq='jq -C'
+alias tf=terraform
+alias pc=packer
+alias pb='packer build'
 
 # for ruby
 alias be='bundle exec'
