@@ -39,3 +39,4 @@ Session.vim
 .envrc
 .rake_tasks
 *.retry
+.terraform

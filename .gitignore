@@ -5,4 +5,4 @@
 .atom/storage/
 .atom/projects.cson
 .atom/blob-store/
-
+envrc/*
