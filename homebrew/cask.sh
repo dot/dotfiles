@@ -2,12 +2,12 @@
 brew cask update
 # versioned
 ## fonts
-brew cask install font-source-code-pro
-brew cask install font-m-plus
-brew cask install font-ricty-diminished
-brew cask install font-source-han-code-jp
-brew cask install font-roboto
-brew cask install font-noto-sans-cjk-jp
+brew cask install font-source-code-pro --force
+brew cask install font-m-plus --force
+brew cask install font-source-han-code-jp --force
+brew cask install font-roboto --force
+brew cask install font-noto-sans-cjk-jp --force
+brew cask install font-fira-code --force
 
 brew cask install karabiner
 brew cask install alfred
@@ -58,13 +58,13 @@ brew cask install glimmerblocker
 brew cask install psequel
 brew cask install sourcetree
 brew cask install wireshark
-brew cask install nylas-n1
 brew cask install qlstephen
 brew cask install quicklook-csv
 brew cask install bitbar
 brew cask install near-lock
 brew cask install vivaldi
 brew cask install rstudio
+brew cask install polymail
 
 # unversioned
 brew cask install dropbox --force
@@ -72,19 +72,21 @@ brew cask install skype --force
 brew cask install onyx --force
 brew cask install path-finder --force
 brew cask install mou
-brew cask install teleport
+brew cask install teleport --force
 brew cask install sitesucker --force
-brew cask install notational-velocity
+brew cask install notational-velocity --force
 brew cask install google-japanese-ime --force
 brew cask install utorrent --force
-brew cask install hotswitch
-brew cask install flashlight
+brew cask install hotswitch --force
+brew cask install flashlight --force
 brew cask install macs-fan-control --force
 brew cask install pingendo --force
 brew cask install qlmarkdown --force
 brew cask install quicklook-json --force
 brew cask install betterzipql --force
 brew cask install suspicious-package --force
+brew cask install amazon-drive --force
+brew cask install amazon-music --force
 
 #cleanup
 brew cask cleanup

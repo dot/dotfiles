@@ -58,6 +58,7 @@ brew install mercurial
 brew install tig
 brew install hub
 brew install heroku-toolbelt
+brew install gnupg2 gpg-agent pinentry-mac
 
 brew install mongodb
 brew install node
@@ -79,9 +80,9 @@ brew install rbenv-gemset
 brew install ruby-build
 
 brew install docker
-brew install boot2docker
 brew install docker-machine
 brew install docker-compose
+brew install docker-clean
 brew install ansible
 brew install packer
 brew install terraform

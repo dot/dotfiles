@@ -1,6 +1,7 @@
 [user]
     name = dot
     email = shuhei.kondo@gmail.com
+	signingkey = AD54151C
 [core]
     excludesfile = ~/.gitignore_global
     autocrlf = input
@@ -54,3 +55,5 @@
 	required = true
 [diff]
 	compactionHeuristic = true
+[gpg]
+	program = gpg2

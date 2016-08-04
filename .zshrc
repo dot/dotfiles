@@ -6,7 +6,7 @@ path=( ~/bin \
     /usr/local/bin /usr/local/sbin \
     /bin /sbin /usr/bin /usr/sbin \
 )
-fpath=(~/.functions ${fpath} ${^${(s/:/)GOPATH}}/src/*/*/ghq/zsh(N))
+fpath=(~/.functions ${fpath} /usr/local/share/zsh/site-functions)
 
 # for go lang
 if [ -x "`which go`" ]; then
@@ -97,3 +97,11 @@ fi
 
 # direnv
 eval "$(direnv hook zsh)"
+
+#gpg
+if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
+    source ~/.gnupg/.gpg-agent-info
+    export GPG_AGENT_INFO
+else
+    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
+fi
