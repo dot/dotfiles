@@ -1,5 +1,6 @@
 require 'rake'
 require 'pathname'
+require 'shellwords'
 
 HOME = Pathname.new(ENV['HOME'])
 
@@ -66,5 +67,13 @@ namespace :tools do
 
   task :ruby do
     # RUBY_CONFIGURE_OPTS="--enable-bundled-libyaml --enable-shared --with-readline-dir=$(brew --prefix readline) --with-openssl-dir=$(brew --prefix openssl)" rbenv install 2.1.1
+  end
+
+  task :gime do
+    %w(boundary cform segment user_dictionary).each do |file|
+      from = Pathname.new('~/Dropbox/environments/macosx/app/google_ime').join("#{file}.db").expand_path
+      to = Pathname.new("~/Library/Application Support/Google/JapaneseInput").join("#{file}.db").expand_path
+      system %Q{ln -snf #{from.to_s.shellescape} #{to.to_s.shellescape}}
+    end
   end
 end
