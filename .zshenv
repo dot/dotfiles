@@ -3,6 +3,8 @@ HISTFILE="$HOME/.zhistory"
 HISTSIZE=100000
 SAVEHIST=100000
 
+export SHELL=$(which zsh)
+
 ### other
 export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
