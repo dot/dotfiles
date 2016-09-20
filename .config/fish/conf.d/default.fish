@@ -22,3 +22,11 @@ command --search go >/dev/null; and begin
   set -gx GOROOT (go env GOROOT)
   set -gx GOPATH $HOME/projects/.go
 end
+
+# for gpg
+if begin; test -f ~/.gnupg/.gpg-agent-info; and test -n (pgrep gpg-agent); end
+    set -l _GPG_AGENT_INFO (cat ~/.gnupg/.gpg-agent-info| tr -s '=' \n)
+    set -gx GPG_AGENT_INFO $_GPG_AGENT_INFO[2]
+end; or begin
+    gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info
+end
