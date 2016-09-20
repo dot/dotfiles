@@ -15,8 +15,9 @@ balias vag "vagrant"
 balias mm "bundle exec middleman"
 
 ### functions
-function cd
-  builtin cd $argv
+function chpwd
+#  builtin cd $argv
+  cd $argv
   ls
 end
 
