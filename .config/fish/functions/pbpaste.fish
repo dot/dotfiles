@@ -1,0 +1,1 @@
+/Users/shuhei/.config/fisherman/pbcopy/functions/pbpaste.fish

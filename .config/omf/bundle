@@ -1,8 +1,0 @@
-package balias
-package config
-package direnv
-package pbcopy
-package peco
-package rbenv
-package z
-theme default

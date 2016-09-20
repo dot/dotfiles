@@ -1,0 +1,1 @@
+/Users/shuhei/.config/fisherman/peco_select_ghq_repository/functions/peco_select_ghq_repository.fish

@@ -1,0 +1,1 @@
+/Users/shuhei/.config/fisherman/yimmy/fish_prompt.fish

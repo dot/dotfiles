@@ -1,0 +1,1 @@
+/Users/shuhei/.config/fisherman/direnv/init.fish

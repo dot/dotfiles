@@ -1,0 +1,1 @@
+/Users/shuhei/.config/fisherman/getopts/getopts.fish
