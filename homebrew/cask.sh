@@ -65,6 +65,7 @@ brew cask install near-lock
 brew cask install vivaldi
 brew cask install rstudio
 brew cask install polymail
+brew cask install speedy
 
 # unversioned
 brew cask install dropbox --force

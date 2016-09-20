@@ -91,3 +91,4 @@ brew install otto
 brew install fzf
 brew install neovim/neovim/neovim
 brew install R
+brew install go
