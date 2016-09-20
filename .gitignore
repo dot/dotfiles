@@ -6,3 +6,4 @@
 .atom/projects.cson
 .atom/blob-store/
 envrc/*
+.config/fisherman
