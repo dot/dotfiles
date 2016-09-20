@@ -34,10 +34,7 @@ brew install reattach-to-user-namespace
 brew install wget
 brew install curl
 brew install xz
-brew install z
-brew install zsh
 brew install fish
-brew install zsh-completions
 brew install renameutils
 brew install rlwrap
 brew install mobile-shell
@@ -68,7 +65,6 @@ brew install mysql
 brew install redis
 brew install sqlite
 brew install vim
-brew install emacs --cocoa --japanese --srgb
 brew install assh
 
 brew install dnsmasq
@@ -86,9 +82,9 @@ brew install docker-clean
 brew install ansible
 brew install packer
 brew install terraform
-brew install otto
 
 brew install fzf
 brew install neovim/neovim/neovim
 brew install R
 brew install go
+brew install elixir

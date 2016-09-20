@@ -27,31 +27,10 @@ task :symlink do
   %w(bin).each do |path|
     system %Q{ln -snf #{Pathname(path).expand_path.relative_path_from(HOME)} #{HOME + path}}
   end
-  # copy theme
-  theme_path = Pathname("#{HOME}/.oh-my-zsh/custom")
-  ln_sf Pathname('misc/oh-my-zsh/ys-dot.zsh-theme').expand_path.relative_path_from(theme_path), theme_path
 end
 
 namespace :tools do
-  task all: %w(oh_my_zsh homebrew ruby)
-  task :oh_my_zsh do
-    unless File.exist?(File.join(ENV['HOME'], ".oh-my-zsh"))
-      puts "installing oh-my-zsh"
-      system %Q{git clone https://github.com/robbyrussell/oh-my-zsh.git "#{HOME}/.oh-my-zsh"}
-    else
-      # git pull
-    end
-  end
-
-  task :oh_my_fish do
-    unless File.exist?(File.join(ENV['HOME'], ".oh-my-fish"))
-      puts "installing oh-my-fish"
-      system %Q{curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/tools/install.fish | fish}
-    else
-      # git pull
-    end
-    system %Q{fish -c "omf install"}
-  end
+  task all: %w(homebrew)
 
   task :homebrew do
     unless system %Q{which brew}
