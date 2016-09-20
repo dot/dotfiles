@@ -1,7 +1,7 @@
 [user]
     name = dot
     email = shuhei.kondo@gmail.com
-	signingkey = AD54151C
+	  signingkey = AD54151C
 [core]
     excludesfile = ~/.gitignore_global
     autocrlf = input
@@ -22,6 +22,7 @@
     autosetuprebase = always
 [alias]
     ci = commit
+    cim = commit -m
     st = status --ignore-submodules=dirty
     co = checkout
     url = config --get remote.origin.url
