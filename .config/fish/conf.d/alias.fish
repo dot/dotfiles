@@ -2,16 +2,16 @@ balias diff colordiff
 balias ls "ls -GF"
 balias la "ls -a"
 balias ll "ls -al"
-balias tm tmux
+abbr tm tmux
 abbr j z
 balias jq "jq -C"
-balias tf terraform
+abbr tf terraform
 
 # for ruby
 balias be "bundle exec"
 balias bu "bundle update"
 balias bi "bundle install"
-balias vag "vagrant"
+abbr vag "vagrant"
 balias mm "bundle exec middleman"
 
 ### functions
