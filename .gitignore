@@ -8,3 +8,6 @@
 envrc/*
 .config/fisherman
 .config/fish/fishd*
+.config/fish/completions
+.config/fish/conf.d
+.config/fish/functions

@@ -1,1 +1,0 @@
-/Users/shuhei/.config/fisherman/peco_select_zsh_history/peco_select_zsh_history.fish

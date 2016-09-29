@@ -1,1 +1,0 @@
-/Users/shuhei/.config/fisherman/await/functions/await.fish
