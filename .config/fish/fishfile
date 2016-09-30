@@ -8,5 +8,6 @@ oh-my-fish/plugin-pbcopy
 oh-my-fish/plugin-peco
 yoshiori/fish-peco_select_ghq_repository
 yoshiori/fish-peco_select_zsh_history
+fisherman/rbenv
 dot/theme-yimmy
 fisherman/z
