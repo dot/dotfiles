@@ -11,3 +11,6 @@ envrc/*
 .config/fish/completions
 .config/fish/conf.d
 .config/fish/functions
+.config/git
+.config/direnv
+.config/heroku
