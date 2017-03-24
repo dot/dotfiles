@@ -33,15 +33,8 @@ namespace :tools do
   task all: %w(homebrew)
 
   task :homebrew do
-    unless system %Q{which brew}
-      puts "installing homebrew"
-      system %Q{./homebrew/init.sh}
-      system %Q{./homebrew/cask.sh}
-      system %Q{brew cask alfred link}
-    else
-      system %Q{brew update && brew upgrade}
-      system %Q{./homebrew/cask.sh}
-    end
+    puts "installing homebrew"
+    system %Q{./homebrew/init.sh}
   end
 
   task :ruby do
