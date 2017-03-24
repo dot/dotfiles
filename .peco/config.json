@@ -1,4 +1,5 @@
 {
+  "Layout": "top-down",
   "Keymap": {
     "C-f": "peco.ForwardChar",
     "C-b": "peco.BackwardChar",
