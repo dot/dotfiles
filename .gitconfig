@@ -1,13 +1,13 @@
 [user]
-    name = dot
-    email = shuhei.kondo@gmail.com
-	  signingkey = AD54151C
+	name = dot
+	email = shuhei.kondo@gmail.com
+#    signingkey = F92C0621AD54151C
+    signingkey = 97FB22AE2F9AD62F10A2E811F92C0621AD54151C
 [core]
     excludesfile = ~/.gitignore_global
     autocrlf = input
     quotepath = false
     precomposeunicode = true
-    editor = atom -w
 [color]
     ui = auto
 [push]
@@ -18,6 +18,7 @@
     rebase = true
 [merge]
     ff = false
+    conflictstyle = diff3
 [branch]
     autosetuprebase = always
 [alias]
@@ -39,8 +40,14 @@
 
     d = diff --patience
     ds = diff --staged
+
+    stash-all = stash save --include-untracked
+    prune=fetch --prune
+    glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 [credential]
     helper = osxkeychain
+[commit]
+#    gpgSign = true
 [pager]
     log = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
     show = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
@@ -57,4 +64,8 @@
 [diff]
 	compactionHeuristic = true
 [gpg]
-	program = gpg2
+	program = /usr/local/bin/gpg
+[pr-release]
+	token = d3462093a177cfc96a06f6783257ef3eb2f08c46
+[interactive]
+	diffFilter = diff-highlight

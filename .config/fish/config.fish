@@ -16,15 +16,14 @@ set -gx LC_ALL 'ja_JP.UTF-8'
 command --search go >/dev/null; and begin
   set -gx GOROOT (go env GOROOT)
   set -gx GOPATH $HOME/projects/.go
+  set -gx PATH $GOPATH/bin $PATH
 end
 
 # gpg agent　を起動する
-if begin; test -f ~/.gnupg/.gpg-agent-info; and test -n (pgrep gpg-agent); end
-    set -l _GPG_AGENT_INFO (cat ~/.gnupg/.gpg-agent-info| tr -s '=' \n)
-    set -gx GPG_AGENT_INFO $_GPG_AGENT_INFO[2]
-end; or begin
-    gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info
-end
+#   https://www.gnupg.org/faq/whats-new-in-2.1.html#autostart
+gpgconf --launch gpg-agent
+set -gx GPG_TTY (/usr/bin/tty)
+#set -gx SSH_AUTH_SOCK "$HOME/.gnupg/S.gpg-agent.ssh"
 
 # fish-peco-select-zsh-history
 set ZSH_HISTORY_FILE ~/.zhistory
@@ -36,14 +35,14 @@ function chpwd --on-variable PWD
 end
 
 # history を fish shell で共有する
-function sync_history --on-event fish_preexec
-    history --save
-    history --merge
+function sync_history
+  history --save
+  history --merge
 end
 
 # pecoるときに historyをsyncする
 function peco_select_history_with_sync
-  sync_history
+#  sync_history
   peco_select_history
 end
 
@@ -53,10 +52,12 @@ function fish_user_key_bindings
 end
 
 # aliases
-abbr tm tmux
+balias tm "direnv exec / tmux"
 abbr j z
 abbr tf terraform
 abbr vag "vagrant"
+alias git hub
+abbr g git
 
 balias diff colordiff
 balias ls "ls -GF"
@@ -87,4 +88,23 @@ function cdb
   set rbcmd "require 'rubygems';gem 'bundler';require 'bundler';Bundler.load.specs.each{|s| puts s.full_gem_path if s.name == '$argv'}"
   echo $rbcmd
   cd (ruby -e $rbcmd)
+end
+
+# peco
+function peco_kill
+  ps ax -o pid,time,command | peco --query "$LBUFFER" | awk '{print $1}' | xargs kill -9
+end
+
+function peco_select_history
+  history |peco |read foo
+
+  if [ $foo ]
+    commandline $foo
+  else
+    commandline ''
+  end
+end
+
+if test -d /usr/local/opt/postgresql@9.6/bin
+  set -g fish_user_paths "/usr/local/opt/postgresql@9.6/bin" $fish_user_paths
 end

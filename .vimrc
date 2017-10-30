@@ -17,6 +17,7 @@ set hidden
 set ruler
 set wrapscan
 set scrolloff=3
+set shell=/bin/bash
 
 " バックスペースでインデントや改行を削除できるようにする
 set backspace=indent,eol,start
