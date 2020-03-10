@@ -1,9 +1,7 @@
 oh-my-fish/plugin-balias
-oh-my-fish/plugin-direnv
-fisherman/getopts
-oh-my-fish/plugin-pbcopy
 yoshiori/fish-peco_select_ghq_repository
-yoshiori/fish-peco_select_zsh_history
-fisherman/rbenv
 dot/theme-yimmy
-fisherman/z
+decors/fish-ghq
+rbenv/fish-rbenv
+oh-my-fish/plugin-nodenv
+jethrokuan/z

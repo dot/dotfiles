@@ -42,7 +42,7 @@
     ds = diff --staged
 
     stash-all = stash save --include-untracked
-    prune=fetch --prune
+    prune=pull --prune
     glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 [credential]
     helper = osxkeychain
@@ -52,15 +52,17 @@
     log = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
     show = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
     diff = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+	branch = cat
 [url "git@github.com:"]
     pushinsteadof = "https://github.com/"
     insteadOf = "https://github.com/"
 [ghq]
     root = ~/projects
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
 [diff]
 	compactionHeuristic = true
 [gpg]

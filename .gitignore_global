@@ -40,3 +40,5 @@ Session.vim
 .rake_tasks
 *.retry
 .terraform
+
+.idea/

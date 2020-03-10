@@ -1,0 +1,33 @@
+prompt_order = [
+#    "username",
+#    "hostname",
+    "kubernetes",
+    "directory",
+    "git_branch",
+    "git_state",
+    "git_status",
+#    "package",
+    "golang",
+#    "java",
+    "nodejs",
+    "python",
+    "ruby",
+    "rust",
+#    "memory_usage",
+    "env_var",
+    "cmd_duration",
+    "line_break",
+    "jobs",
+#    "time",
+    "character",
+]
+
+#[directory]
+#truncate_to_repo = false
+
+#[time]
+#disabled = false
+#format = "[%T]"
+
+#[character]
+#use_symbol_for_status = true
